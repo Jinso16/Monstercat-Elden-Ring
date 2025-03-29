@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Notable&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 body {
     margin: 0;
     border: 0;
     padding: 0;
 
-    background-color: #383838;
+    background-color: #120f10;
 
-    font-family: "Notable", sans-serif;
+    font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -22,7 +24,8 @@ body {
 
     background-image: url(images/Elden-Ring-Header.jpg);
     background-position: top;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size:cover;
     background-repeat: no-repeat;
 
     z-index: -1;
@@ -44,6 +47,35 @@ header {
     height: 120px;
 }
 
+.social {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    align-items: center;
+    justify-content: start;
+
+    right: 0;
+
+    gap: 1.5vh;
+
+    padding: 1.5vh 0;
+
+    margin-top: 35vh;
+    margin-right: 5.1vw;
+
+    width:40px;
+}
+
+.social-icon {
+    width: 1.5vw;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
+
 svg path {
     fill: #ffffff;
 }
@@ -58,7 +90,9 @@ svg path {
 
     color: #ffffff;
 
-    height: 50vw;
+    height: 50vh;
+
+    padding-top: 12vw;
 
     gap: 50px;
 
@@ -66,27 +100,52 @@ svg path {
     align-items: center;
 }
 
+.infos-1 {
+    display: flex;
+    gap: 2px;
+}
+
+.cover-text {
+    margin-bottom: 5px;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    letter-spacing: .5px;
+
+    rotate: 180deg;
+    writing-mode: vertical-lr;
+
+    font-size: 1vw;
+}
+
 .cover-img {
     width: 22vw;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .title {
     margin-top: -15px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 2.5vw;
+
+    letter-spacing: 1px;
 }
 
 .composer {
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     font-style: normal;
 
-    font-size: 32px;
+    font-size: 1.5vw;
 }
 
 .infos-buttons {
-    margin-top: 15px;
     gap: 2vw;
 }
 
@@ -94,31 +153,209 @@ svg path {
     display: flex;
     flex-direction: column;
 
+    gap: 1.5vw;
+
     justify-content: center;
+}
+
+.icon-profile {
+    width: 3vw;
+    margin-right: 1vw;
 }
 
 .info-btn {
     border: 0;
-    border-radius: 2px;
+    border-radius: 0px;
 
-    height: 6vh;
+    height: 3vw;
 
     color: #ffffff;
 
-    font-family: "Rubik Mono One", monospace;
+    font-family: "Krona One", sans-serif;
     font-weight: 400;
+    font-style: normal;
 
+    font-size: 1vw;
 
     align-items: center;
 }
 
+.info-btn:hover {
+    cursor: pointer;
+}
+
 .btn1 {
-    background-color: rgb(39, 194, 129);
+    background-color: #50A584;
     width: 12vw;
+
+    transition: .2s ease;
+}
+
+.btn1:hover {
+    color: #383838;
+    background-color: #ffffff;
 }
 
 .btn2 {
     background-color: rgba(39, 194, 129, 0);
     border: 1px solid;
     width: 8vw;
+
+    transition: .2s ease;
+}
+
+.btn2:hover {
+    color: #383838;
+    background-color: #ffffff;
+}
+
+.gradient {
+    background: linear-gradient(0deg, rgba(18,15,16,1) 40%, rgba(255,255,255,0) 100%);
+    z-index: -1;
+
+    margin-top: -13vw;
+
+    height: 30vw;
+}
+
+.plataforms {
+    background-color: #120f10;
+
+    margin-top: -5vw;
+    padding: 0vw 20vw;
+}
+
+.tab-txt {
+    margin-bottom: 2vw;
+
+    color: #ffffff;
+
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+
+    letter-spacing: -1px;
+
+    font-size: 2.5vw;
+}
+
+.div-plataforms {
+    display: flex;
+    height: 4.5vw;
+
+    align-items: center;
+}
+
+.plat {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+
+    width: 4.5vw;
+    height: 100%;
+
+    transition: .8s ease;
+}
+
+.plat:hover{
+    display: flex;
+
+    gap: 1vw;
+
+    width: 15vw;
+
+    color: rgb(255, 255, 255);
+}
+
+.plat-txt {
+    display: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1.5vw;
+
+    -webkit-animation-delay: .5s ease;
+}
+
+.plat:hover .plat-txt{
+    -webkit-animation-delay: .2s ease;
+    display: block;
+}
+
+.plat-icon {
+    width: 2vw;
+}
+
+.tracklist {
+    background-color: #120f10;
+
+
+
+    padding: 5vw 20vw 0;
+}
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+.track {
+    display: flex;
+
+    color: #ffffff;
+
+    align-items: center;
+    justify-content: space-between;
+
+    
+    letter-spacing: .5px;
+
+    font-size: 1vw;
+}
+
+.track-sec-1 {
+    display: flex;
+    align-items: center;
+
+    gap: 1.5vw;
+
+}
+
+.track-sec-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1.5vw;  
+}
+
+.play-btn {
+    width: 1.2vw;
+}
+
+.play-btn:hover {
+    cursor: pointer;
+}
+
+.song-info-text {
+    margin: 0;
+}
+
+.comp {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.div-other {
+
+    padding: 2vw 20vw;
 }
