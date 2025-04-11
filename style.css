@@ -359,3 +359,35 @@ svg path {
 
     padding: 2vw 20vw;
 }
+
+.div-releases {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 3vw;
+    row-gap: 2.5vh;
+}
+
+.img-release {
+    width: 12vw;
+}
+
+.release-title {
+    font-size: 1.2vw;
+    font-weight: 400;
+
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.release-producer {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+
+    margin: 0;
+    font-size: .85vw;
+}
